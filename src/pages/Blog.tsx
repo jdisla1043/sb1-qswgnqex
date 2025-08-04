@@ -1,4 +1,5 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 import BlogCard from '../components/BlogCard';
 
 const blogPosts = [
@@ -34,7 +35,14 @@ const blogPosts = [
 
 function Blog() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Commercial Cleaning Blog - Expert Tips & Industry Insights | Florida Commercial Cleaning"
+        description="Expert advice and industry insights for commercial cleaning. Learn about best practices, cleaning protocols, and maintenance tips from Florida's leading cleaning professionals."
+        keywords="commercial cleaning tips, cleaning best practices, facility maintenance, cleaning protocols, janitorial advice, Florida cleaning experts"
+        canonicalUrl="/blog"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Cleaning Insights & Tips</h1>
@@ -46,7 +54,7 @@ function Blog() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

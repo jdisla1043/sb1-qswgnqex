@@ -1,11 +1,19 @@
 import React from 'react';
 import { Shield, CheckCircle2, AlertTriangle, Microscope } from 'lucide-react';
+import SEOHead from '../../components/SEOHead';
 import EmergencyResponseCTA from '../../components/EmergencyResponseCTA';
 import ContactForm from '../../components/ContactForm';
 
 const Salmonella = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Salmonella Emergency Response & Remediation - Rapid Florida Service"
+        description="Rapid Salmonella contamination response and complete remediation services across Florida. Professional emergency response team with specialized equipment and proven protocols."
+        keywords="Salmonella remediation, food poisoning response, emergency cleaning, restaurant decontamination, food safety, contamination cleanup, Florida"
+        canonicalUrl="/foodborne/salmonella"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-red-900 to-red-800 text-white py-20">
         <div className="container mx-auto px-6">
@@ -138,7 +146,7 @@ const Salmonella = () => {
           <ContactForm />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

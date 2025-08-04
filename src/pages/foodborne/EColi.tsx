@@ -1,11 +1,19 @@
 import React from 'react';
 import { Shield, CheckCircle2, AlertTriangle, Microscope } from 'lucide-react';
+import SEOHead from '../../components/SEOHead';
 import EmergencyResponseCTA from '../../components/EmergencyResponseCTA';
 import ContactForm from '../../components/ContactForm';
 
 const EColi = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="E. coli Emergency Response & Remediation - 24/7 Florida Service"
+        description="Immediate E. coli contamination response and professional remediation services across Florida. 24/7 emergency response team with specialized equipment and EPA-registered sanitizers."
+        keywords="E. coli remediation, foodborne illness response, emergency cleaning, restaurant sanitization, food safety, contamination cleanup, Florida"
+        canonicalUrl="/foodborne/ecoli"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-red-900 to-red-800 text-white py-20">
         <div className="container mx-auto px-6">
@@ -138,7 +146,7 @@ const EColi = () => {
           <ContactForm />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

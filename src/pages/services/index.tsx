@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Building2, UtensilsCrossed, Guitar as Hospital, Warehouse, Clock, Sparkles, Building, School, Factory, ShoppingCart, Briefcase, Hammer, Trees, HardHat, Trash2 } from 'lucide-react';
+import SEOHead from '../../components/SEOHead';
 
 const services = [
   {
@@ -112,7 +113,14 @@ const services = [
 
 function ServicesIndex() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Commercial Cleaning Services - Professional Solutions for Every Industry"
+        description="Comprehensive commercial cleaning services including office cleaning, restaurant sanitization, medical facility cleaning, industrial cleaning, and specialized services across Florida."
+        keywords="commercial cleaning services, office cleaning, restaurant cleaning, medical facility cleaning, industrial cleaning, warehouse cleaning, retail cleaning, Florida"
+        canonicalUrl="/services"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Professional Cleaning Services</h1>
@@ -149,7 +157,7 @@ function ServicesIndex() {
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

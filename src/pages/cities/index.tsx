@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin } from 'lucide-react';
+import SEOHead from '../../components/SEOHead';
 
 const cities = [
   { name: 'Jacksonville', population: '949,611', region: 'Northeast Florida' },
@@ -22,7 +23,14 @@ const cities = [
 
 function CitiesIndex() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Florida Cities We Serve - Commercial Cleaning Services Statewide"
+        description="Professional commercial cleaning services available across Florida. Serving Jacksonville, Miami, Tampa, Orlando, and all major Florida cities with expert cleaning solutions."
+        keywords="commercial cleaning Florida cities, Jacksonville cleaning, Miami cleaning, Tampa cleaning, Orlando cleaning, Florida janitorial services"
+        canonicalUrl="/cities"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Commercial Cleaning Services Across Florida</h1>
@@ -50,7 +58,7 @@ function CitiesIndex() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

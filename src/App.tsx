@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Phone, MapPin, Shield, Building2, Guitar as Hospital, UtensilsCrossed, Clock, CheckCircle2, Mail, AlertTriangle, Hammer } from 'lucide-react';
+import SEOHead from './components/SEOHead';
 import Navbar from './components/Navbar';
 import ServiceCard from './components/ServiceCard';
 import ContactForm from './components/ContactForm';
@@ -25,6 +26,12 @@ import Salmonella from './pages/foodborne/Salmonella';
 function HomePage() {
   return (
     <>
+      <SEOHead 
+        title="Florida Commercial Cleaning - Professional Cleaning Services | Tampa Bay"
+        description="Professional commercial cleaning services across Florida. Specializing in office cleaning, restaurant sanitization, medical facility cleaning, and 24/7 emergency response. Licensed & insured. Call (813) 738-4220."
+        keywords="commercial cleaning Florida, office cleaning Tampa, restaurant cleaning, medical facility cleaning, janitorial services, emergency cleaning response, mold remediation, post construction cleaning, Tampa Bay cleaning"
+        canonicalUrl="/"
+      />
       {/* Hero Section */}
       <HeroSlider />
 

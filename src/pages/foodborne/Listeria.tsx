@@ -1,11 +1,19 @@
 import React from 'react';
 import { Shield, CheckCircle2, AlertTriangle, Microscope } from 'lucide-react';
+import SEOHead from '../../components/SEOHead';
 import EmergencyResponseCTA from '../../components/EmergencyResponseCTA';
 import ContactForm from '../../components/ContactForm';
 
 const Listeria = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Listeria Emergency Response & Remediation - Professional Florida Service"
+        description="Swift Listeria contamination response and thorough remediation services across Florida. Specialized protocols for high-risk pathogen elimination with 24/7 emergency response."
+        keywords="Listeria remediation, foodborne pathogen response, emergency sanitization, food processing cleanup, contamination response, Florida"
+        canonicalUrl="/foodborne/listeria"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-red-900 to-red-800 text-white py-20">
         <div className="container mx-auto px-6">
@@ -138,7 +146,7 @@ const Listeria = () => {
           <ContactForm />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
